@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portal Cidadania Digital: Desinformação e Deepfakes</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Cabeçalho Principal -->
+    <header class="main-header">
+        <div class="header-container">
+            <h1>Cidadania<span>Digital</span></h1>
+            <button id="toggle-dark-mode" class="btn-accessibility" aria-label="Alternar modo escuro">🌓 Modo Escuro</button>
+        </div>
+    </header>
+
+    <!-- Conteúdo Principal Semântico -->
+    <main>
+        
+        <!-- Seção 1: Introdução ao Tema -->
+        <section class="hero-section">
+            <h2>O Impacto das Deepfakes na Sociedade</h2>
+            <p>Com o avanço da Inteligência Artificial, identificar o que é real na internet tornou-se um desafio. Deepfakes são vídeos, áudios ou imagens manipulados por IA para fazer pessoas parecerem dizer ou fazer coisas que nunca fizeram. Espalhar esse conteúdo sem checar destrói reputações e afeta a democracia.</p>
+        </section>
+
+        <!-- Seção 2: Como Identificar (Guia Prático) -->
+        <section class="guide-section">
+            <h2>Como Identificar Mídias Manipuladas</h2>
+            <div class="cards-container">
+                <div class="card">
+                    <h3>👁️ Pistas Visuais</h3>
+                    <p>Fique atento a piscadas não naturais, falhas nas bordas do rosto, iluminação inconsistente e dentes borrados.</p>
+                </div>
+                <div class="card">
+                    <h3>🔊 Inconsistências de Áudio</h3>
+                    <p>Ruídos metálicos de fundo, pausas robóticas ou falta de sincronia entre os lábios e a fala são alertas vermelhos.</p>
+                </div>
+                <div class="card">
+                    <h3>🔍 Contexto e Fonte</h3>
+                    <p>Sempre verifique se grandes portais de notícias confirmam a informação. Não compartilhe por impulso.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção 3: Desafio Interativo (Quiz Anti-Desinformação) -->
+        <section class="quiz-section">
+            <h2>Desafio: Você sabe identificar um Deepfake?</h2>
+            <p>Teste suas habilidades respondendo às perguntas abaixo antes de compartilhar conteúdos suspeitos.</p>
+            
+            <form id="quiz-form" onsubmit="return false;">
+                <!-- Pergunta 1 -->
+                <div class="quiz-item">
+                    <label for="q1"><strong>1. Um vídeo mostra uma figura pública agindo de forma bizarra, mas nenhum grande jornal publicou sobre isso. O que você faz?</strong></label>
+                    <select id="q1" required>
+                        <option value="">-- Selecione uma resposta --</option>
+                        <option value="correto">Desconfio, procuro em sites de checagem e não compartilho.</option>
+                        <option value="errado">Compartilho imediatamente nos grupos de mensagem para alertar os outros.</option>
+                    </select>
+                </div>
+
+                <!-- Pergunta 2 -->
+                <div class="quiz-item">
+                    <label for="q2"><strong>2. Qual destas alternativas descreve uma falha técnica comum em uma deepfake facial de baixa qualidade?</strong></label>
+                    <select id="q2" required>
+                        <option value="">-- Selecione uma resposta --</option>
+                        <option value="errado">O vídeo ter alta definição e cores extremamente vivas.</option>
+                        <option value="correto">Movimentos dos olhos artificiais, falta de piscadas e sombras desalinhadas.</option>
+                    </select>
+                </div>
+
+                <button type="button" id="btn-submit-quiz" class="btn-primary">Verificar Respostas</button>
+            </form>
+
+            <!-- Container de feedback dinâmico via JS -->
+            <div id="quiz-result" class="result-box hidden"></div>
+        </section>
+
+    </main>
+
+    <!-- Rodapé Semântico -->
+    <footer class="main-footer">
+        <p>&copy; 2026 - Projeto Cidadania Digital e IA. Desenvolvido para fins educacionais.</p>
+        <p>Hashtag do Projeto: <strong>#cidadaniadigital2026</strong></p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
